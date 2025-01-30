@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+I keep forgettting so I put this here -R
+Class is a .
+ID is a #
+*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    /*all the colours so we can design at the end
+    everything was done as variables so we could change colours quickly at the end*/
+
+    --darkblue: #0A4058;
+    --lightblue: #4FCAFF;
+    --lightgreen: #829E7A; 
+    --green: #5B7F4E;
+    --beige: #E4D7CF;
+    --black: #3B3A38;
+    --darkorange: #FE9635;
+    --lightorange: #FFC15E;
+    --pink: #FD84A0;
+
+    /* NEW COLOUR VARIABLES*/
+
+    --bg: var(--lightgreen);
+    --font: var(--black);
+    --boxes: var(--darkorange);
+    --river: var(--lightblue);
+    --hearts: var(--pink);
+}
+body{
+    background-color: var(--bg);
+}
+
+h1 {
+    font-family: sauna-swash-new, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--font);
+}
+
+h2{
+    font-size: 6.25em;
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: sauna-swash-new, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--font);
+}
+
+p {
+    font-family: sofia-pro-condensed, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+p:nth-child(2) {
+    margin-bottom: 20px;
+}
+/* code for game over page */
+
+.gameoversad img {
+    height: 300px;
+}
+
+.gameover h1 {
+    margin-top: 10%;
+    background-color: var(--boxes);
+    width: 500px;
+    height: 50px;
+    border-radius: 30px 10px 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--boxes);
+    /* width: 350px;
+    height: 160px; */
+    margin-top: 50px;
+    border-radius: 30px 10px 30px 10px;
+}
+.btn {
+    background-color: var(--boxes);
+    color: var(--font);
+    padding: 20px 10px;;
+    border-radius: 20px;
+    font-size: 3em;
+    font-family: sofia-pro-condensed, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* end of game over code */
+#page{
+    display: flex;
+    justify-content: center;
+    flex: 80%;
+    
+}
+#stats{
+    margin-right: 50px;
+    height: 100vh;
+}
+
+#river{
+    background-image: url('../img/River.png');
+    background-size: cover;
+    width: 50%;
+    height: 150vh;
+}
+
+#river .fishColumn {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+#river .column {
+    width:16%;
+    position:relative;
+    display:flex;
+}
+
+#river .column_cat {
+    width:16%;
+    position:relative;
+    z-index:10;
+}
+
+.columnSpacer {
+    width: 25%;
+}
+
+.logo{
+    background-color: var(--boxes);
+    width: 350px;
+    height: 160px;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 30px 10px 30px 10px;
+} 
+
+.score{
+    background-color: var(--boxes);
+    /*
+    width: 350px;
+    height: 160px;
+    */
+    margin-top: 50px;
+    display: flex;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px 10px 30px 10px;
+    color: var(--font);
+}
+
+.legend{
+    background-color: var(--boxes);
+    /*
+    width: 350px;
+    height: 375px;
+    */
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px 10px 30px 10px;
+    color: var(--font);
+}
+ 
+.legend img {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.row {
+    display:flex;
+    justify-content: center;
+}
+
+.column img.item {
+ width:40%;
+ position:absolute;
+ bottom:0px;
+ margin-left: 40px;
+}
+/* margin is to put the fish in the center of his mouth */
+
+.column_cat .cat img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .column .cat {
+    height: 20%vh;
+    display: flex;
+    justify-content: flex-start;
+}
+did nothing 
+i wanted to make the cat column short at the top*/
+
+.FishColumns {
+    display:flex;
+    height:100vh;
+}
+
+
+/* https://dev.to/diraskjavascript/how-to-round-div-corners-using-css-13n4
+for border radius code */
